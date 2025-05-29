@@ -7,6 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
+      
         ## Read Me First
 
         - **Do not use this issue tracker to ask questions.** Use one of these [channels](https://vertx.io/community/). Questions will likely be closed without notice.
