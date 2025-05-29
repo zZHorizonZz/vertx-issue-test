@@ -1,7 +1,8 @@
 name: "Feature request"
 description: Suggest a new feature or improvement for this project.
 title: "[Feature] "
-type: "Feature"
+labels: [ "feature" ]
+#type: "Feature"
 body:
   - type: markdown
     attributes:
