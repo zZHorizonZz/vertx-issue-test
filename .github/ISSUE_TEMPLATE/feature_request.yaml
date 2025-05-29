@@ -1,0 +1,40 @@
+name: "Feature request"
+description: Suggest a new feature or improvement for this project.
+title: "[Feature] "
+type: "Feature"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Read Me First
+
+        - **Do not use this issue tracker to ask questions.** Use one of these [channels](https://vertx.io/community/). Questions will likely be closed without notice.
+        - Only create a feature request if it is general purpose enough.
+        - Make sure that the feature is not already requested.
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Describe the feature
+      description: Give the simplest and best explanation of the feature you would like to see.
+      placeholder: Clearly describe the feature you are requesting.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use cases
+      description: List use cases this feature will enable and the value it creates.
+      placeholder: Explain how this feature will be useful and what scenarios it will support.
+    validations:
+      required: true
+
+  - type: textarea
+    id: contribution
+    attributes:
+      label: Contribution
+      description: Who should implement this feature? Are you volunteering to implement it, or do you know someone who is able and willing to implement it?
+      placeholder: Please indicate if you are able to help implement this feature or suggest someone who can.
+    validations:
+      required: false

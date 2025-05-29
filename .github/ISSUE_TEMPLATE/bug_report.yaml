@@ -1,0 +1,58 @@
+name: "Bug report"
+description: "Create a report to help us improve"
+title: "[Buf] "
+type: "Bug"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Do not use this issue tracker to ask questions.**  
+        Please use one of these [channels](https://vertx.io/community/).  
+        Questions will likely be closed without notice.
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Which version(s) did you encounter this bug?
+      placeholder: "e.g., 4.0.3, 3.9.9"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Describe the context where the bug occurred. (e.g., "I encountered an exception which looks suspicious while ...")
+      placeholder: "I encountered an exception which looks suspicious while ..."
+    validations:
+      required: true
+
+  - type: input
+    id: reproducer
+    attributes:
+      label: Do you have a reproducer?
+      description: |
+        A reproducer is a simple project hosted on GitHub (or another forge supporting git clone) with a build file that reproduces the issue.
+        Reproducers are very helpful and will likely help fix your bug faster.
+      placeholder: "Link to github project/gist"
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the steps to reproduce the bug.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+        4. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Extra
+      description: Anything else that can be relevant (e.g., OS version, JVM version)
+      placeholder: "e.g., OS: Ubuntu 20.04, JVM: OpenJDK 11"
